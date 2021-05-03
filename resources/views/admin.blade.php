@@ -238,16 +238,20 @@
                 </p>
               </a>
             </li>
+              <li class="nav-item">
+              <a href="{{url('orders')}}" class="nav-link">
+                <i class="nav-icon fas fa-orders"></i>
+                <p>
+                 Orders
+                </p>
+              </a>
+            </li>
              <li class="nav-item ">
-              <a href="{{ route('logout') }}" class="nav-link"  onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                <i class="nav-icon fas fa-power-off"></i>
+              <a href="{{url('logout')}}" class="nav-link"> <i class="nav-icon fas fa-power-off"></i>
                 <p>
                   Logout
                 </p>
               </a>
-               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                @csrf
-              </form>
             </li>
           </ul>
         </nav>

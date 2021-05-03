@@ -161,10 +161,11 @@ class FrontController extends Controller
      {
     if (Auth::check()) {
       $useremail = Auth::User()->email;
-      $order=order::where('useremail',$useremail)->get();
-      $a=orderproduct::where('useremail',$useremail)->get();
-      $data = $a;
-       return view('front.myaccount',compact('a','data','order'));
+      //$order=order::where('useremail',$useremail)->get();
+      $data = DB::table('orders')->join('orderproducts','orders.id','orderproducts.order_id')->get();
+      //$a=orderproduct::where('useremail',$useremail)->get();
+      // $data = $a;
+       return view('front.myaccount',compact('data'));
     }
     else
     {

@@ -95,7 +95,7 @@
                                             <th>No</th>
                                             <th>Product Name</th>
                                             <th>Date & Time</th>
-                                            <th>Status</th>
+                                            <th>Image</th>
                                             <th>Total</th>
                                             <th>Action</th>
                                         </tr>
@@ -106,7 +106,7 @@
                                             <td>{{$cart->id}}</td>
                                             <td>{{$cart->product_name}}</td>
                                             <td>{{$cart->created_at}}</td>
-                                            <td>Pending</td>
+                                            <td><img src="{{ url('/upload/'.$cart->product_image)}}" style="height: 100px; width: 100px"></td>
                                             <td>₹ {{$cart->product_price}}</td>
                                             <td><a href="shopping-cart.html" class="btn btn-info">View</a>
                                             	 <a href="shopping-cart.html" class="btn btn-danger">Delete</a>
@@ -164,7 +164,7 @@
                                             <th>Method</th>
                                         </tr>
                                     </thead>
-                                     @foreach($order as $payment)
+                                     @foreach($data as $payment)
                                     <tbody>
                                         <tr>
                                             <td>{{$payment->id}}</td>
@@ -204,7 +204,7 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                     @foreach($order as $address)
+                                     @foreach($data as $address)
                                     <tbody>
                                         <tr>
                                             <td>{{$address->id}}</td>

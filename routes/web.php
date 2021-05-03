@@ -132,9 +132,15 @@ Route::post('banner/update','BannerController@update');
 
 Route::get('banner/display/delete/{id}','BannerController@delete');
 
+//Ordre display in Admin Routes
+
+Route::get('orders','OrderController@order');
+
 //Admin Controller
 
 Route::get('admin/login','AdminController@login');
+
+Route::get('logout','AdminController@logout');
 
 Auth::routes();
 
