@@ -348,7 +348,7 @@
                         <ul class="d-flex justify-content-center justify-content-md-end align-items-center">
                         @guest
                             <li>
-                                <a href="{{url('login/user')}}" >Login </a>
+                                <a href="{{url('front/login')}}" >Login </a>
                             </li>
                             @if (Route::has('register'))
                             <li class="nav-item">
@@ -514,26 +514,26 @@
                     <div class="d-flex align-items-center justify-content-center justify-content-sm-end">
                         <div class="cart-block-links theme3">
                             <ul class="d-flex">
-                               <!--  <li>
+                                <li>
                                     <a href="compare.html">
                                         <span class="position-relative">
                                             <i class="icon-shuffle"></i>
                                             <span class="badge cbdg1"></span>
                                         </span>
                                     </a>
-                                </li> -->
-                               <!--  <li>
+                                </li>
+                                <li>
                                     <a class="offcanvas-toggle" href="#offcanvas-wishlist">
                                         <span class="position-relative">
                                             <i class="icon-heart"></i>
                                             <span class="badge cbdg1">3</span>
                                         </span>
                                     </a>
-                                </li> -->
+                                </li>
                                 <li class="mr-0 cart-block position-relative">
-                                    <a class="" href="{{url('/cart')}}">
+                                    <a class="offcanvas-toggle" href="#offcanvas-cart">
                                         <span class="position-relative">
-                                           <!--  <i class="icon-bag"></i> --><i class="fas fa-shopping-cart"></i>
+                                            <!-- <i class="icon-bag"></i> --><i class="fas fa-shopping-cart"></i>
                                             <span class="badge cbdg1"></span>
                                         </span>
                                         <span class="cart-total position-relative">₹ 0</span>

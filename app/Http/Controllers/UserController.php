@@ -46,6 +46,12 @@ class UserController extends Controller
     	}
     }
 
+     public function samsung()
+   {
+    return view('front.forgotpassword');
+   }
+
+
     
 
     public function loginsave(Request $a)

@@ -30,4 +30,18 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+    'client_id' => 'GOOGLE_CLIENT_ID',
+    'client_secret' => 'GOOGLE_CLIENT_SECRET',
+    'redirect' => 'http://localhost:8000/laravel-socialite/public/login/google/callback',
+    ],
+
+     'facebook' => [
+    'client_id' => 'FACEBOOK_CLIENT_ID',
+    'client_secret' => 'FACEBOOK_CLIENT_SECRET',
+    'redirect' => 'http://localhost:8000/facebook/callback',
+    ],
+
+
+
 ];

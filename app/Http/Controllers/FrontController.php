@@ -137,8 +137,13 @@ class FrontController extends Controller
     $cart->product_price=$c->product_price;
     $cart->product_image=$c->product_image;
     $cart->product_size=$c->product_size;
+    // echo "<pre>";
+    // print_r($data);
+    // die;
     $cart->save();
+
     if($cart){
+     
       return redirect('thanks')->with('message','Thanks your order suuccessfully');
     }
 

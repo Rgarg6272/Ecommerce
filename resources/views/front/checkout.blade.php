@@ -200,96 +200,14 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                           <!--  <div class="form-group row">
-                                                <div class="col-md-9 col-md-offset-3">
-                                                    <div class="filter-check-box mb-0">
-                                                        <input type="checkbox" id="20824" required="">
-                                                        <label class="checkout" for="20824">check out</label>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                           <!--  <div class="form-group row mb-0">
-                                                <div class="col-12 text-right">
-                                                    <button type="submit"
-                                                        class="btn theme-btn--dark1 btn--md">Continue</button>
-                                                </div>
-                                            </div> -->
+                                    
                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span>3</span> Shipping Method
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="delivery-options-list">
-                                    <form>
-                                        <div class="delivery-option">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-sm-1">
-                                                            <div class="custom-radio-modify">
-                                                                <div class="custom-radio">
-                                                                    <input type="radio" id="test3" name="radio-group">
-                                                                    <label id="pull-up" for="test3"> </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-11 delivery-option-2">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-sm-5 col-12">
-                                                                    <div class="row align-items-center">
-                                                                        <div class="col-3">
-                                                                            <img src="assets/img/icon/10.jpg"
-                                                                                alt="My carrier">
-                                                                        </div>
-                                                                        <div class="col-9">
-                                                                            <span class="carrier-name">My
-                                                                                carrier</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-4 col-12">
-                                                                    <span class="carrier-delay">Delivery next
-                                                                        day!</span>
-                                                                </div>
-                                                                <div class="col-sm-3 col-12">
-                                                                    <span class="carrier-price">$7.00 tax excl.</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="order-options">
-                                            <div id="delivery" class="text-right">
-                                                <label class="text-left d-block">If you would like to add a comment
-                                                    about your order, please write it in the field
-                                                    below.</label>
-                                                <textarea class="form-control mt-2 mb-4"></textarea>
-                                                <button type="submit" class="btn theme-btn--dark1 btn--md">
-                                                    Continue
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                   
                     <div class="card">
                         <div class="card-header" id="headingFour">
                             <h5 class="mb-0">

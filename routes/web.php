@@ -54,7 +54,7 @@ Route::get('editaddress','FrontController@editaddress');
 Route::get('thanks','FrontController@orderconfirm');
 //User Controller
 
-Route::get('login/user','UserController@login');
+
 
 Route::get('register/user','UserController@register');
 
@@ -64,7 +64,7 @@ Route::post('loginsave','UserController@loginsave');
 
 Route::get('front/logout','UserController@logout');
 
-
+Route::get('front/login','UserController@login');
 
 
 //Category Controller
@@ -149,3 +149,25 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('admin/dashboard','AdminController@dashboard');
+
+
+
+
+
+//Login with google
+
+Route::get('login/google', 'Auth\LoginController@redirectToGoogle');
+Route::get('laravel-socialite/public/login/google/callback', 'Auth\LoginController@handleGoogleCallback');
+
+//Login with facebook
+
+Route::get('login/facebook', 'Auth\FacebookController@redirectToFacebook');
+Route::get('facebook/callback', 'Auth\FacebookController@handleFacebookCallback');
+
+//forgot password
+
+Route::get('gettingforgot','UserController@samsung');
+
+Route::view('forgot_password', 'auth.reset_password')->name('password.reset');
+
+
