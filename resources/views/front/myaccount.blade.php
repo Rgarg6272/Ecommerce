@@ -93,6 +93,7 @@
                                     <thead class="thead-light">
                                         <tr>
                                             <th>No</th>
+                                            <th>Name</th>
                                             <th>Product Name</th>
                                             <th>Date & Time</th>
                                             <th>Image</th>
@@ -104,6 +105,7 @@
                                     <tbody>
                                         <tr>
                                             <td>{{$cart->id}}</td>
+                                            <td>{{$cart->name}}</td>
                                             <td>{{$cart->product_name}}</td>
                                             <td>{{$cart->created_at}}</td>
                                             <td><img src="{{ url('/upload/'.$cart->product_image)}}" style="height: 100px; width: 100px"></td>
@@ -141,7 +143,7 @@
                                             <td>{{$cart->product_name}}</td>
                                             <td>{{$cart->created_at}}</td>
                                             <td>Yes</td>
-                                            <td><a href="#" class="ht-btn black-btn">Download File</a></td>
+                                            <td><a href="{{url('invoice')}}" class="ht-btn black-btn">Download File</a></td>
                                         </tr>
                                     </tbody>
                                     @endforeach

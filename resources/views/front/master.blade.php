@@ -170,7 +170,7 @@
 </div>
 <!-- offcanvas-mobile-menu end -->
 <!-- OffCanvas Wishlist Start -->
-<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist theme3">
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist theme4">
     <div class="inner">
         <div class="head d-flex flex-wrap justify-content-between">
             <span class="title">Wishlist</span>
@@ -212,7 +212,7 @@
 <!-- OffCanvas Wishlist End -->
 
 <!-- OffCanvas Cart Start -->
-<div id="offcanvas-cart" class="offcanvas offcanvas-cart theme3">
+<div id="offcanvas-cart" class="offcanvas offcanvas-cart theme1">
     <div class="inner">
         <div class="head d-flex flex-wrap justify-content-between">
             <span class="title">Cart</span>
@@ -220,7 +220,7 @@
         </div>
         <ul class="minicart-product-list">
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/1.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/1.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Walnut Cutting Board</a>
@@ -229,7 +229,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/2.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/2.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Lucky Wooden Elephant</a>
@@ -238,7 +238,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/3.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/3.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Fish Cut Out Set</a>
@@ -388,7 +388,7 @@
     </div>
     <!-- header top end -->
     <!-- header-middle satrt -->
-    <div class="header-middle theme3 bg-white py-30">
+     <div class="header-middle theme3 bg-white py-30">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-5 col-lg-2 order-first">
@@ -530,13 +530,13 @@
                                         </span>
                                     </a>
                                 </li>
-                                <li class="mr-0 cart-block position-relative">
+                                  <li class="mr-0 cart-block position-relative">
                                     <a class="offcanvas-toggle" href="#offcanvas-cart">
                                         <span class="position-relative">
-                                            <!-- <i class="icon-bag"></i> --><i class="fas fa-shopping-cart"></i>
-                                            <span class="badge cbdg1"></span>
+                                            <i class="icon-bag"></i>
+                                            <span class="badge cbdg1">3</span>
                                         </span>
-                                        <span class="cart-total position-relative">₹ 0</span>
+                                        <span class="cart-total position-relative">$90.00</span>
                                     </a>
                                 </li>
                                 <!-- cart block end -->

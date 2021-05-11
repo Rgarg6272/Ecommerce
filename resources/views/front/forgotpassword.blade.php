@@ -87,7 +87,7 @@ body{
              {{session('message')}}
              </p>
            @endif
-            <form class="col-md-9" method="post" action="{{url('api/password/reset')}}">
+            <form class="col-md-9" method="post" action="{{url('password.email')}}">
                 @csrf
                 <div class="AppForm shadow-lg">
                     <div class="row">
@@ -100,29 +100,6 @@ body{
                                         placeholder="Enter E-mail" value="{{request()->get('email')}}">
                                         <i class="fa fa-user-o"></i>
                                 </div>
-                                <div class="form-group position-relative mb-4">
-                                    <input type="password" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" id="password"
-                                        placeholder="Password" name="password" placeholder="Enter new password">
-                                        <i class="fa fa-key"></i>
-                                        <input type="password" class="form-control border-top-0 border-right-0 border-left-0 rounded-0 shadow-none" id="password"
-                                        placeholder="Password" name="password_confirmation" placeholder="Confirm new password">
-                                         <input hidden name="token" placeholder="token" value="{{request()->get('token')}}">
-
-                                </div>
-                                <div class="row  mt-4 mb-4">
-                                   <!--  <div class="col-md-6">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                            <label class="form-check-label" for="defaultCheck1">
-                                                Remember me
-                                            </label>
-                                        </div>
-                                    </div> -->
-                                   <!--  <div class="col-md-6 text-right">
-                                        <a href="#">Forgot Password?</a>
-                                    </div> -->
-                                </div>
-
                                 <button type="submit" class="btn btn-success btn-block shadow border-0 py-2 text-uppercase ">
                                     Submit
                                 </button>

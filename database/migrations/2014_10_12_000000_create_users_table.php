@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
+            $table->string('verification_code')->nullable();
+            $table->integer('is_verified')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

@@ -31,8 +31,8 @@ return [
     ],
 
     'google' => [
-    'client_id' => 'GOOGLE_CLIENT_ID',
-    'client_secret' => 'GOOGLE_CLIENT_SECRET',
+    'client_id' => env('GOOGLE_CLIENT_ID'),
+    'client_secret' => env('GOOGLE_CLIENT_SECRET'),
     'redirect' => 'http://localhost:8000/laravel-socialite/public/login/google/callback',
     ],
 

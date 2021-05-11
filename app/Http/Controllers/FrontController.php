@@ -203,6 +203,10 @@ class FrontController extends Controller
 
     }
 }
+   public function invoice()
+   {
+    return view('front.invoice');
+   }
     
 
     public function deletecart($id)

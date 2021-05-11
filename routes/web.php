@@ -49,6 +49,8 @@ Route::post('place_order','FrontController@place_order');
 Route::get('myaccount','FrontController@myaccount');
 
 Route::get('editaddress','FrontController@editaddress');
+
+Route::get('invoice','FrontController@invoice');
 // order completed 
 
 Route::get('thanks','FrontController@orderconfirm');
@@ -166,8 +168,23 @@ Route::get('facebook/callback', 'Auth\FacebookController@handleFacebookCallback'
 
 //forgot password
 
-Route::get('gettingforgot','UserController@samsung');
+// Route::get('gettingforgot','UserController@samsung');
 
-Route::view('forgot_password', 'auth.reset_password')->name('password.reset');
+// Route::view('forgot_password', 'auth.reset_password')->name('password.reset');
+
+
+Route::get('/verify','UserController@verifyUser')->name('verify.user');
+
+
+Route::get('/clear', function() { 
+        Artisan::call('cache:clear');
+        Artisan::call('config:clear');
+        Artisan::call('config:cache');
+        Artisan::call('view:clear');
+        Artisan::call('route:clear'); 
+        return "Cleared!"; 
+    });
+
+
 
 
