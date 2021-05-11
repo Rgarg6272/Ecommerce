@@ -178,7 +178,7 @@ body{
                                         </div>
                                     </div>
                                     <div class="col-md-6 text-right">
-                                        <a href="{{url('gettingforgot')}}">Forgot Password?</a>
+                                        <a href="{{url('/forget-password')}}">Forgot Password?</a>
                                     </div>
                                 </div>
 

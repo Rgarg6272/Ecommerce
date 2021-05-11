@@ -168,9 +168,13 @@ Route::get('facebook/callback', 'Auth\FacebookController@handleFacebookCallback'
 
 //forgot password
 
-// Route::get('gettingforgot','UserController@samsung');
+Route::get('/forget-password', 'ForgotPasswordController@getEmail');
+Route::post('/forget-password', 'ForgotPasswordController@postEmail');
 
-// Route::view('forgot_password', 'auth.reset_password')->name('password.reset');
+//Reset password
+	
+Route::get('/reset-password/{token}', 'ResetPasswordController@getPassword');
+Route::post('/reset-password', 'ResetPasswordController@updatePassword');
 
 
 Route::get('/verify','UserController@verifyUser')->name('verify.user');
