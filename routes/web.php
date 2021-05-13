@@ -180,6 +180,11 @@ Route::post('/reset-password', 'ResetPasswordController@updatePassword');
 Route::get('/verify','UserController@verifyUser')->name('verify.user');
 
 
+
+//Paytm Payment Route
+Route::post('/paytm-callback', 'FrontController@paytmCallback');
+
+
 Route::get('/clear', function() { 
         Artisan::call('cache:clear');
         Artisan::call('config:clear');

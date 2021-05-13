@@ -1019,6 +1019,19 @@
     <script src="{{url('Front/assets/js/bootstrap.min.js')}}"></script>
     <script src="{{url('Front/assets/js/plugins/plugins.js')}}"></script>
     <script src="{{url('Front/assets/js/main.js')}}"></script>
+  <script>
+        function select_payment_method()
+        {
+        if($('.stripe').is(':checked') || $('.cod').is(':checked') || $('.paytm').is(':checked') || $('.razorpay').is(':checked') ){
+        alert('checked');
+        }
+        else{
+        alert('Please select payment method');
+        return false;
+         }
+        }
+
+    </script>
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
 

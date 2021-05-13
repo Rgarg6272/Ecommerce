@@ -220,8 +220,8 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body pt-0">
                                 <div class="custom-radio mb-4">
-                                    <input type="radio" id="test5" name="radio-group">
-                                    <label for="test5">Pay by Check</label>
+                                    <input type="radio" value="Paytm" id="test5" name="payment_method" class="paytm">
+                                    <label for="test5">Paytm</label>
                                 </div>
                                 <div class="custom-radio mb-4">
                                     <input type="radio" id="test6" name="radio-group">
@@ -279,7 +279,7 @@
                        <!--  <button type="submit" class="btn theme-btn--dark1 btn--md">Place Order</button> -->
                     </li>
                 </ul>
-                 <button type="submit" name="place order" class="btn theme-btn--dark1 btn--md">Place Order</button>
+                 <button type="submit" name="place order" class="btn theme-btn--dark1 btn--md" onclick="return select_payment_method();">Place Order</button>
                 <!--  <input type="submit" name="place order"> -->
           </form>
               <!--   <div class="delivery-info mt-20">
