@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="{{url('Admin/plugins/summernote/summernote-bs4.css')}}">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!---data table--->
+    <link rel="stylesheet" href="{{url('Admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
+    <link rel="stylesheet" href="{{url('Admin/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   </head>
   <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
@@ -151,7 +154,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
+      <a href="{{url('/admin/dashboard')}}" class="brand-link">
         <img src="{{url('https://st2.depositphotos.com/8301258/11591/v/950/depositphotos_115916704-stock-illustration-e-commerce-logo-business-vector.jpg')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
              style="opacity: .8">
         <span class="brand-text font-weight-light">E-commerce</span>
@@ -165,7 +168,7 @@
             <img src="{{url('Admin/dist/img/honey.jpeg')}}" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Rajkumar Garg</a>
+            <a href="{{url('/admin/dashboard1')}}" class="d-block">Rajkumar Garg</a>
           </div>
         </div>
 
@@ -259,29 +262,25 @@
       </div>
       <!-- /.sidebar -->
     </aside>
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <div class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-             <!--  <h1 class="m-0 text-dark">Dashboard</h1> -->
-            </div><!-- /.col -->
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                
-              </ol>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-         
-        </div><!-- /.container-fluid -->
-       
-      </div>
-      <!-- /.content-header -->
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
       <div class="container-fluid">
-
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Grocery Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+               <h5 class="m-0 text-dark">Welcome</h5>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+   
 
     <!--- footer start---->
 
@@ -311,9 +310,9 @@
   <!-- ./wrapper -->
 
   <!-- jQuery -->
-  <script src="{{url('plugins/jquery/jquery.min.js')}}"></script>
+  <script src="{{url('Admin/plugins/jquery/jquery.min.js')}}"></script>
   <!-- jQuery UI 1.11.4 -->
-  <script src="{{url('plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+  <script src="{{url('Admin/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
   <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
   <script>
     $.widget.bridge('uibutton', $.ui.button)
@@ -344,5 +343,27 @@
   <script src="{{url('Admin/dist/js/pages/dashboard.js')}}"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="{{url('Admin/dist/js/demo.js')}}"></script>
+  <!-- DataTables -->
+<script src="{{url('Admin/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+<script src="{{url('Admin/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="{{url('Admin/plugins/datatables-responsive/js/dataTables.responsive.min.js')}}"></script>
+<script src="{{url('Admin/plugins/datatables-responsive/js/responsive.bootstrap4.min.js')}}"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
   </body>
   </html>

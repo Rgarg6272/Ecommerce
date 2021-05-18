@@ -62,30 +62,7 @@
                                     </div>
 
                                 
-                                   <!--  <div class="form-group row">
-                                        <div class="col-md-3"></div>
-                                        <div class="col-md-6">
-                                            <div class="check-box-inner pt-0">
-                                                <div class="filter-check-box">
-                                                    <input type="checkbox" id="20820">
-                                                    <label for="20820">Receive offers from our partners</label>
-                                                </div>
-                                                <div class="filter-check-box">
-                                                    <input type="checkbox" id="20821">
-                                                    <label for="20821">Sign up for our newsletter</label>
-                                                    <p class="pl-25">Be the First to Know. Sign up for
-                                                        newsletter
-                                                        today !</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="sign-btn text-right">
-                                                <a href="#" class="btn theme-btn--dark1 btn--md">Continue</a>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                               
+                                   
                             </div>
                         </div>
                     </div>
@@ -220,7 +197,7 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body pt-0">
                                 <div class="custom-radio mb-4">
-                                    <input type="radio" value="Paytm" id="test5" name="payment_method" class="paytm">
+                                    <input type="radio" value="Paytm" id="test5" name="payment_method" class="Paytm">
                                     <label for="test5">Paytm</label>
                                 </div>
                                 <div class="custom-radio mb-4">

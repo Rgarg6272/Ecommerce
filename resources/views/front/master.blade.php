@@ -45,12 +45,7 @@
         <div class="offcanvas-head mb-4">
             <nav class="offcanvas-top-nav">
                 <ul class="d-flex justify-content-center align-items-center">
-                    <!-- <li class="mx-4"><a href="compare.html"><i class="ion-ios-loop-strong"></i> Compare <span>(0)</span>
-                        </a></li> -->
-                   <!--  <li class="mx-4">
-                        <a href="wishlist.html"> <i class="ion-android-favorite-outline"></i> Wishlist
-                            <span>(0)</span></a>
-                    </li> -->
+                   
                 </ul>
             </nav>
         </div>
@@ -1022,7 +1017,7 @@
   <script>
         function select_payment_method()
         {
-        if($('.stripe').is(':checked') || $('.cod').is(':checked') || $('.paytm').is(':checked') || $('.razorpay').is(':checked') ){
+        if($('.stripe').is(':checked') || $('.cod').is(':checked') || $('.Paytm').is(':checked') || $('.razorpay').is(':checked') ){
         alert('checked');
         }
         else{

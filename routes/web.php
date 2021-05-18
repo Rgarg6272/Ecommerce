@@ -152,6 +152,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('admin/dashboard','AdminController@dashboard');
 
+Route::get('admin/dashboard1','AdminController@dashboard1');
+
 
 
 

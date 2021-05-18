@@ -108,7 +108,7 @@
                             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
                                 <tr>
                                     <td align="center" style="font-family: Open Sans, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: ; padding-top: 25px;"><img src="https://cdn.dribbble.com/users/282075/screenshots/4756095/icon_confirmation.gif" width="350" height="300" style="display: block; border: 0px;" /><br>
-                                        <h2 style="font-size: 30px; font-weight: 800; line-height: 36px; color: #333333; margin: 0;"> Thank You For Your Order! </h2>
+                                        <h2 style="font-size: 30px; font-weight: 800; line-height: 36px; color: #333333; margin: 0;"> Thank You! Your Order will Delievered Soon! Have A Nice Day </h2>
                                     </td>
                                 </tr>
                             </table>

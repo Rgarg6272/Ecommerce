@@ -11,12 +11,17 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-    	return view('admin');
+    	return view('admin.dashboard');
     }
 
     public function login()
     {
     	return view('admin.login');
+    }
+
+    public function dashboard1()
+    {
+        return view('admin.dashboard');
     }
 
     public function logout()

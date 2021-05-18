@@ -9,9 +9,66 @@ use App\order;
 use App\orderproduct;
 use DB;
 use Auth;
+use Illuminate\Support\Str;
 
 class FrontController extends Controller
 {
+  //SMS SEND CODE
+   function sms($mob,$msg)
+{
+  
+$username = urlencode("u4017"); 
+$msg_token = urlencode("vNYI8c"); 
+$sender_id = urlencode("FSTSMS"); // optional (compulsory in transactional sms) 
+$message = urlencode("$msg"); 
+$mobile = urlencode("$mob"); 
+
+$url = "https://www.fast2sms.com/dev/wallet?authorization=vVHtFajIGE8RlqzCWpZdUbmgfiYNeSAknOX6u97rQcJ4shyBPwj9G6JvhRDuxTWwVSsyMC1cXzH3aeYN".$username."&msg_token=".$msg_token."&sender_id=".$sender_id."&message=".$msg."&mobile=".$mobile.""; 
+
+// $url="https:www.fast2sms.com/dev/bulkV2?authorization=vVHtFajIGE8RlqzCWpZdUbmgfiYNeSAknOX6u97rQcJ4shyBPwj9G6JvhRDuxTWwVSsyMC1cXzH3aeYN&sender_id=FSTSMS&message=".urlencode('YOUR_MESSAGE_ID')."&variables_values=".urlencode('12345|asdaswdx')."&route=dlt&numbers=".urlencode('9999999999,8888888888,7777777777'),
+
+//API URL
+//$url="http://sms.globehost.com/api/sendhttp.php";
+$postData=json_enco(array(
+$username = urlencode("u4017"), 
+$msg_token = urlencode("vNYI8c"), 
+$sender_id = urlencode("FSTSMS"), // optional (compulsory in transactional sms) 
+$message = urlencode("$msg"),
+$mobile = urlencode("$mob")));
+// init the resource
+$ch = curl_init();
+curl_setopt_array($ch, array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_POSTFIELDS => $postData
+    //,CURLOPT_FOLLOWLOCATION => true
+));
+
+
+
+//Ignore SSL certificate verification
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+
+//get response
+$output = curl_exec($ch);
+
+//Print error if any
+if(curl_errno($ch))
+{
+    echo 'error:' . curl_error($ch);
+}
+
+curl_close($ch);
+return 1;
+
+}
+
+
+
+  //SMS SEND CODE END
     public function index()
     {
     	$banner=Banner::all();
@@ -108,6 +165,8 @@ class FrontController extends Controller
     $data->phone=$a->phone;
     $data->payment_method=$a->payment_method;
     $data->grand_total=$a->grand_total;
+    $data->order_status="pending";
+    $data->order_id=Str::random(10);
 
     $data->save();
 
@@ -132,7 +191,7 @@ class FrontController extends Controller
     // print_r($data);
     // die;
     $cart->save();
-  }
+    }
 
    if($data['payment_method']=="pay by cash on delivery")
         {
@@ -140,8 +199,8 @@ class FrontController extends Controller
             
         }elseif($data['payment_method']=="Paytm")
         {
-          $order = new Order();
-            $data->order_status = 'pending';
+          
+            $order_id=$data['order_id'];
             $amount=$data['grand_total'];
             
 
@@ -165,23 +224,9 @@ class FrontController extends Controller
     $checkSum = "";
     $paramList = array();
 
-    // $paramList["body"] = array(
-    //  "requestType"   => "Payment",
-    //  "mid"           => "izMqEx58417900878943",
-    //  "websiteName"   => "WEBSTAGING",
-    //  "orderId"       => "$order_id",
-    //  "callbackUrl"   => "/paytm-callback",
-    //  "txnAmount"     => array(
-    //    "value"     => "1.00",
-    //    "currency"  => "INR",
-    //  ),
-    //  "userInfo"      => array(
-    //    "custId"    => "CUST_001",
-    //  ),
-    // );
-
+    
     // Create an array having all required parameters for creating checksum.
-    $paramList["MID"] = 'izMqEx58417900878943';
+    $paramList["MID"] = 'KIvNaP47593859356038';
     $paramList["ORDER_ID"] = $order_id;
     $paramList["CUST_ID"] = $order_id;
     $paramList["INDUSTRY_TYPE_ID"] = 'Retail';
@@ -189,7 +234,7 @@ class FrontController extends Controller
     $paramList["TXN_AMOUNT"] = $grand_total;
     $paramList["WEBSITE"] = 'WEBSTAGING';
     $paramList["CALLBACK_URL"] = url( '/paytm-callback' );
-    $paytm_merchant_key = 'I%IrJnP&#_!QXPW&';
+    $paytm_merchant_key = 'Z6j%Scb%sCMeJMSg';
 
     //Here checksum string will return by getChecksumFromArray() function.
     $checkSum = getChecksumFromArray( $paramList, $paytm_merchant_key );
@@ -470,8 +515,8 @@ class FrontController extends Controller
 
     function getConfigPaytmSettings() {
     define('PAYTM_ENVIRONMENT', 'TEST'); // PROD
-    define('PAYTM_MERCHANT_KEY', 'I%IrJnP&#_!QXPW&'); //Change this constant's value with Merchant key downloaded from portal
-    define('PAYTM_MERCHANT_MID', 'izMqEx58417900878943'); //Change this constant's value with MID (Merchant ID) received from Paytm
+    define('PAYTM_MERCHANT_KEY', 'Z6j%Scb%sCMeJMSg'); //Change this constant's value with Merchant key downloaded from portal
+    define('PAYTM_MERCHANT_MID', 'KIvNaP47593859356038'); //Change this constant's value with MID (Merchant ID) received from Paytm
     define('PAYTM_MERCHANT_WEBSITE', 'WEBSTAGING'); //Change this constant's value with Website name received from Paytm
 
     $PAYTM_STATUS_QUERY_NEW_URL='https://securegw-stage.paytm.in/merchant-status/getTxnStatus';
@@ -487,14 +532,19 @@ class FrontController extends Controller
   }
 
     public function paytmCallback( Request $request ) {
+      //return $request;
     $order_id = $request['ORDERID'];
 
     if ( 'TXN_SUCCESS' === $request['STATUS'] ) {
       $transaction_id = $request['TXNID'];
       $order = Order::where( 'order_id', $order_id )->first();
-      // $order->order_status = 'complete';
+      $order->order_status = 'complete';
       $order->transaction_id = $transaction_id;
       $order->save();
+      $mobile=$data->phone;
+      $msg="Dear+customer%2C%0D%0AYou+have+successfully+placed+your+%0D%0AOrder+for+a+wonderful+handmadelove+product+that+will+be+specially+curated+for+you+%26+your+loved+one.%0D%0AWe+would+need+your+help+to+make+it+the+best+so+we+will+call+you+in+72+hours+While+making+the+product+to+understand+your+requirements+better";
+      $msg = $this->sms($mobile,$msg);
+
       return view( 'front.order-complete', compact( 'order' ) );
 
     } else if( 'TXN_FAILURE' === $request['STATUS'] ){
