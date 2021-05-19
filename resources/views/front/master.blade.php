@@ -103,7 +103,7 @@
                     </ul>
                 </li>
                 <li><a href="#"><span class="menu-text">About Us</span></a>
-                    <!-- <ul class="offcanvas-submenu">
+                    <ul class="offcanvas-submenu">
                         <li><a href="about-us.html">About Page</a></li>
                         <li><a href="cart.html">Cart Page</a></li>
                         <li><a href="checkout.html">Checkout Page</a></li>
@@ -111,9 +111,9 @@
                         <li><a href="login.html">Login &amp; Register Page</a></li>
                         <li><a href="myaccount.html">Account Page</a></li>
                         <li><a href="wishlist.html">Wishlist Page</a></li>
-                    </ul> -->
+                    </ul>
                 </li>
-               <!--  <li><a href="#"><span class="menu-text">Blog</span></a>
+                <li><a href="#"><span class="menu-text">Blog</span></a>
                     <ul class="offcanvas-submenu">
                         <li><a href="#"><span class="menu-text">Blog Grid</span></a>
                             <ul class="offcanvas-submenu">
@@ -138,7 +138,7 @@
                             </ul>
                         </li>
                     </ul>
-                </li> -->
+                </li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -165,7 +165,7 @@
 </div>
 <!-- offcanvas-mobile-menu end -->
 <!-- OffCanvas Wishlist Start -->
-<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist theme4">
+<div id="offcanvas-wishlist" class="offcanvas offcanvas-wishlist theme1">
     <div class="inner">
         <div class="head d-flex flex-wrap justify-content-between">
             <span class="title">Wishlist</span>
@@ -173,7 +173,7 @@
         </div>
         <ul class="minicart-product-list">
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/4.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/4.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Walnut Cutting Board</a>
@@ -182,7 +182,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/5.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/5.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Lucky Wooden Elephant</a>
@@ -191,7 +191,7 @@
                 </div>
             </li>
             <li>
-                <a href="single-product.html" class="image"><img src="{{url('Front/assets/img/product/6.jpg')}}"
+                <a href="single-product.html" class="image"><img src="assets/img/product/6.jpg"
                         alt="Cart product Image"></a>
                 <div class="content">
                     <a href="single-product.html" class="title">Fish Cut Out Set</a>
@@ -200,7 +200,7 @@
                 </div>
             </li>
         </ul>
-        <a href="wishlist.html" class="btn theme--btn-ddefault btn--lg d-block d-sm-inline-block rounded-5 mt-30">view
+        <a href="wishlist.html" class="btn theme--btn-default btn--lg d-block d-sm-inline-block rounded-5 mt-30">view
             wishlist</a>
     </div>
 </div>
@@ -246,10 +246,10 @@
             <strong>Subtotal :</strong>
             <span class="amount">$144.00</span>
         </div>
-        <a href="cart.html" class="btn theme--btn-ddefault btn--lg d-block d-sm-inline-block rounded-5 mr-sm-2">view
+        <a href="cart.html" class="btn theme--btn-default btn--lg d-block d-sm-inline-block rounded-5 mr-sm-2">view
             cart</a>
         <a href="checkout.html"
-            class="btn theme-btn--dark3 btn--lg d-block d-sm-inline-block mt-4 mt-sm-0 rounded-5">checkout</a>
+            class="btn theme-btn--dark1 btn--lg d-block d-sm-inline-block mt-4 mt-sm-0 rounded-5">checkout</a>
         <p class="minicart-message">Free Shipping on All Orders Over $100!</p>
     </div>
 </div>
@@ -1042,6 +1042,20 @@
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/main.js"></script> -->
     <!-- Messenger Chat plugin Code -->
+
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60a4b604185beb22b30e99cd/1f61me0tb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
    
 
 

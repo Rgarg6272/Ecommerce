@@ -6,6 +6,7 @@ use App\product;
 use App\Cart;
 use Session;
 use App\order;
+use App\category;
 use App\orderproduct;
 use DB;
 use Auth;
@@ -72,8 +73,9 @@ return 1;
     public function index()
     {
     	$banner=Banner::all();
-    	$product=product::all();
-    	return view('front.index',compact('banner','product'));
+      $categories=category::all();
+    	$products=product::all();
+    	return view('front.index',compact('banner','products','categories'));
     }
 
     public function productdetail($id)

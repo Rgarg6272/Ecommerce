@@ -35,7 +35,7 @@
 </section>
 <!-- main slider end -->
 <!-- popular-section  start -->
-<!-- <div class="popular-section theme1 bg-white pt-80 pb-80">
+<div class="popular-section theme1 bg-white pt-80 pb-80">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -50,35 +50,35 @@
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/7.jpg" alt="img"></a>
+                                        src="assets/img/popular/7.jpg" alt="img"></a>
                                 <h3 class="popular-title">
                                     <a href="#"> Fresh Vegetables <span>(16)</span></a>
                                 </h3>
                                 <a href="shop-grid-4-column.html" class="btn shop-now-btn text-uppercase mt-25">shop
                                     now</a>
                             </div>
-                        </div> -->
-                   <!--  </div>
-                    
+                        </div>
+                    </div>
+                    <!-- slider-item end -->
                     <div class="slider-item">
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/8.jpg" alt="img"></a>
+                                        src="assets/img/popular/8.jpg" alt="img"></a>
                                 <h3 class="popular-title">
-                                    <a href="#"> Daily Needs <span>(17)</span></a>
+                                    <a href="#"> Fresh Fruit <span>(17)</span></a>
                                 </h3>
                                 <a href="shop-grid-4-column.html" class="btn shop-now-btn text-uppercase mt-25">shop
                                     now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- slider-item end -->
-                    <!-- <div class="slider-item">
+                    <div class="slider-item">
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/9.jpg" alt="img"></a>
+                                        src="assets/img/popular/9.jpg" alt="img"></a>
                                 <h3 class="popular-title">
                                     <a href="#"> Milk, Butter & Eggs <span>(18)</span></a>
                                 </h3>
@@ -86,13 +86,13 @@
                                     now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- slider-item end -->
-                  <!--   <div class="slider-item">
+                    <div class="slider-item">
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/10.jpg" alt="img"></a>
+                                        src="assets/img/popular/10.jpg" alt="img"></a>
                                 <h3 class="popular-title">
                                     <a href="#"> Fresh Food <span>(19)</span></a>
                                 </h3>
@@ -100,13 +100,13 @@
                                     now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- slider-item end -->
-                    <!-- <div class="slider-item">
+                    <div class="slider-item">
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/11.jpg" alt="img"></a>
+                                        src="assets/img/popular/11.jpg" alt="img"></a>
                                 <h3 class="popular-title">
                                     <a href="#"> Oranges & Citrus Fruit <span>(20)</span></a>
                                 </h3>
@@ -114,13 +114,13 @@
                                     now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- slider-item end -->
-                    <!-- <div class="slider-item">
+                    <div class="slider-item">
                         <div class="card popular-card popular-card-bg zoom-in d-block overflow-hidden">
                             <div class="card-body">
                                 <a href="#" class="thumb-naile"> <img class="d-block mx-auto"
-                                        src="Front/assets/img/popular/7.jpg" alt="img"></a>
+                                        src="assets/img/popular/7.jpg" alt="img"></a>
                                 <h3 class="popular-title">
                                     <a href="#"> Onions & Leeks <span>(21)</span></a>
                                 </h3>
@@ -128,13 +128,13 @@
                                     now</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- slider-item end -->
-            <!--     </div>
+                </div>
             </div>
         </div>
     </div>
-</div>  -->
+</div>
 <!-- popular-section  end -->
 <br>
 
@@ -156,7 +156,7 @@
             <div class="col-md-6 mb-30">
                 <div class="banner-thumb">
                     <a href="shop-grid-4-column.html" class="zoom-in d-block overflow-hidden">
-                        <img src="Front/assets/img/banner/15.jpg" alt="banner-thumb-naile">
+                        <img src="{{url('Front/assets/img/buy1.jpg')}}" alt="banner-thumb-naile">
                     </a>
                 </div>
             </div>
@@ -177,7 +177,7 @@
 </div>
 <!-- common banner  end -->
 <!-- product tab start -->
-<section class="product-tab bg-white pt-50 pb-80">
+<section class="product-tab theme3 bg-white pt-50 pb-80">
     <div class="container">
         <div class="product-tab-nav mb-35">
             <div class="row align-items-center">
@@ -188,21 +188,19 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <nav class="product-tab-menu theme1">
-                        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <nav class="product-tab-menu">
+                        
+                         <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+
+                            @foreach ($categories as $key=>$category)
                             <li class="nav-item">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                    role="tab" aria-controls="pills-home" aria-selected="true">Daily Needs</a>
+                                <a  class="nav-link {{ $key==0 ? 'active' : '' }}" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills-home" href="#pills-category_{{$category->id}}" aria-selected="true"   
+                                    >{{$category->name}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                    role="tab" aria-controls="pills-profile" aria-selected="false">Snacks and Munchies Corner</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                                    role="tab" aria-controls="pills-contact" aria-selected="false">Cleaning & Household</a>
-                            </li>
+                            
+                            @endforeach
                         </ul>
+                    
                     </nav>
                 </div>
             </div>
@@ -211,1584 +209,59 @@
         <div class="row">
             <div class="col-12">
                 <div class="tab-content" id="pills-tabContent">
-                    <!-- first tab-pane -->
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                  <!-- first tab-pane -->
+                    @foreach ($categories as $key=>$category )
+                    <div class="tab-pane fade show {{ $key==0 ? 'active' : ''}}" 
+                       id="pills-category_{{$category->id}}"  role="tabpanel"
                         aria-labelledby="pills-home-tab">
-                        <div class="product-slider-init theme1 slick-nav">
-                            @foreach($product as $product)
+                        <div class="product-slider-init slick-nav">           
+                            @php
+                            $c_products=DB::table('products')->where('cat_id',$category->id)->get();
+                            @endphp
+                            @foreach ($c_products as $products)
                             <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="{{url('productdetail/'.$product->id)}}">
-                                                        <img class="first-img" src="{{url('/upload/'. $product->product_image)}}"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="₹shop-grid-4-column.html">{{$product->product_name}}</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">₹ {{$product->product_price}}</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                  
+                                <div class="card product-card">
+                                    <div class="card-body p-0">
+                                        <div class="media flex-column">
+                                 <div class="product-thumbnail position-relative">
+                                                <span class="badge badge-danger top-right">New</span> 
+                                                <a href="{{url('productdetail/'.$products->id)}}">
+                                                    <img src="{{ url('/upload/'.$products->product_image) }}" 
+                                                    style="height: 250px; width: 250px; "        alt="thumbnail">
+                                                </a>
                                             </div>
-
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-success top-left"></span>
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="{{url('productdetail/'.$product->id)}}">
-                                                        <img class="first-img" src="{{url('/upload/'.$product->product_image)}}"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">{{$product->product_name}}</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del"></del>
-                                                                <span class="onsale">₹ {{$product->product_price}}</span></h6>
-                                                                 <button class="pro-btn" data-toggle="modal"
+                                            <div class="media-body">
+                                                <div class="product-desc">
+                                                    <h3 class="title"><a href="{{'productdetail/'.$products->id}}">
+                                                        {{$products->product_name}}</a></h3>
+                                                    <div class="star-rating">
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star"></span>
+                                                        <span class="ion-ios-star de-selected"></span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <h6 class="product-price"><span>Rs. </span> {{$products->product_price}}</h6>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                         <button class="pro-btn" data-toggle="modal"
                                                                 data-target="#add-to-cart"><i
                                                                     class="icon-basket"></i></button>
-                                                        </div>
+                                                    </div>
+                                                     <div class="d-flex align-items-center justify-content-between">
+                                                        <p class="product-price"><span>Quantity</span> {{$products->product_quantity}}</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- product-list End -->
                                 </div>
-                           
-                              
                             </div>
-                            <!-- slider-item end -->
-                              @endforeach
+                            @endforeach
                             <!-- slider-item end -->
                         </div>
                     </div>
-                    <!-- second tab-pane -->
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="product-slider-init theme1 slick-nav">
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/21.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-success top-left">-10%</span>
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/22.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Running Arishi trainers in triple</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/23.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Fresh Foam Kaymin from new zeland</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/24.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Running Fuel Cell trainers</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/25.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">Juicy
-                                                                Couture
-                                                                Tricot Logo Stripe Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"> $21.51</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/26.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/27.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">Juicy
-                                                                Couture
-                                                                Tricot Logo Stripe Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/28.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/29.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's
-                                                                Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/30.jpg"
-                                                            alt="thumbnail">
-                                                        <img class="second-img" src="Front/assets/img/product/30.1.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/31.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's
-                                                                Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/32.jpg"
-                                                            alt="thumbnail">
-                                                        <img class="second-img" src="Front/assets/img/product/32.1.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                        </div>
-                    </div>
-                    <!-- third tab-pane -->
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="product-slider-init theme1 slick-nav">
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/21.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-success top-left">-10%</span>
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/22.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Running Arishi trainers in triple</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/23.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Fresh Foam Kaymin from new zeland</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/24.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Balance
-                                                                Running Fuel Cell trainers</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/25.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">Juicy
-                                                                Couture
-                                                                Tricot Logo Stripe Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"> $21.51</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/26.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/27.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">Juicy
-                                                                Couture
-                                                                Tricot Logo Stripe Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/28.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/29.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's
-                                                                Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/30.jpg"
-                                                            alt="thumbnail">
-                                                        <img class="second-img" src="Front/assets/img/product/30.1.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                            <div class="slider-item">
-                                <div class="product-list mb-30">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/31.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">New Luxury
-                                                                Men's
-                                                                Slim Fit Shirt Short Sleeve...</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price"><del class="del">$23.90</del>
-                                                                <span class="onsale">$21.51</span></h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                                <div class="product-list">
-                                    <div class="card product-card">
-                                        <div class="card-body p-0">
-                                            <div class="media flex-column">
-                                                <div class="product-thumbnail position-relative">
-                                                    <span class="badge badge-danger top-right">New</span>
-                                                    <a href="single-product.html">
-                                                        <img class="first-img" src="Front/assets/img/product/32.jpg"
-                                                            alt="thumbnail">
-                                                        <img class="second-img" src="Front/assets/img/product/32.1.jpg"
-                                                            alt="thumbnail">
-                                                    </a>
-                                                    <!-- product links -->
-                                                    <ul class="product-links d-flex justify-content-center">
-                                                        <li>
-                                                            <a href="wishlist.html">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="add to wishlist" class="icon-heart"> </span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#compare">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Add to compare" class="icon-shuffle"></span>
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#" data-toggle="modal" data-target="#quick-view">
-                                                                <span data-toggle="tooltip" data-placement="bottom"
-                                                                    title="Quick view" class="icon-magnifier"></span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                    <!-- product links end-->
-                                                </div>
-                                                <div class="media-body">
-                                                    <div class="product-desc">
-                                                        <h3 class="title"><a href="shop-grid-4-column.html">orginal
-                                                                Kaval
-                                                                Windbreaker Winter Jacket</a></h3>
-                                                        <div class="star-rating">
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star"></span>
-                                                            <span class="ion-ios-star de-selected"></span>
-                                                        </div>
-                                                        <div class="d-flex align-items-center justify-content-between">
-                                                            <h6 class="product-price">$11.90</h6>
-                                                            <button class="pro-btn" data-toggle="modal"
-                                                                data-target="#add-to-cart"><i
-                                                                    class="icon-basket"></i></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- product-list End -->
-                                </div>
-                            </div>
-                            <!-- slider-item end -->
-                        </div>
-                    </div>
+                     @endforeach
                 </div>
             </div>
         </div>
